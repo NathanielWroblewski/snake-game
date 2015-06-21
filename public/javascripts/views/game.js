@@ -34,7 +34,6 @@ Snake.Views.Game = function(config) {
     var board = this.model.toJSON()
 
     if (board.over) {
-      alert('GAME OVER!')
       location.reload()
     } else {
       this.el.innerHTML = this.template(board)
